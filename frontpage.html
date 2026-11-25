@@ -1,71 +1,204 @@
 <!-- The World on Wednesday — 25 November 2026.
-     A hand-drawn front page, rendered to entry.png. Hero: the PIF tower in
-     Riyadh at dusk, scarred by a Houthi drone strike — the second hit on the
-     tower in under a week, 11 wounded (Reuters / Saudi Civil Defense).
-     Supporting stories verified against Bloomberg, the European Commission
-     and the BBC before drawing. One dominant visual, one giant date,
-     minimal text — the lesson of the 17 November entry, which lost with
-     plain typography and six equally-weighted items. -->
+     Front page drawn by hand in this file and rendered to entry.png.
+     Hero: the PIF tower in Riyadh at dusk, scarred by a Houthi drone
+     strike — the second hit on the tower in under a week, 11 wounded
+     (Reuters / Saudi Civil Defense). Supporting stories verified against
+     Bloomberg, the European Commission and the BBC before drawing.
+     Design rule, learned from the 17 November entry that lost: one
+     dominant visual, one giant date, minimal text, firm hierarchy. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>The World on Wednesday — 25 November 2026</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { width: 1024px; height: 1024px; overflow: hidden; background: #0a1120;
-    font-family: Georgia, 'Times New Roman', serif; color: #f2ede4; }
-  .page { width: 1024px; height: 1024px; display: flex; flex-direction: column;
-    background: linear-gradient(180deg, #0a1120 0%, #0d1a30 46%, #13263f 100%); }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: #0a1120;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #f2ede4;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #0a1120 0%, #0d1a30 46%, #13263f 100%);
+  }
   /* Masthead */
-  .mast { padding: 26px 48px 0; text-align: center; }
-  .mast .name { font-size: 30px; letter-spacing: 10px; font-weight: 700; color: #f2ede4; }
-  .mast .name em { font-style: normal; color: #f5a623; }
-  .rule { height: 2px; background: #f5a623; margin: 12px 48px 0; }
-  .rule.thin { height: 1px; background: #5a6b84; margin-top: 4px; }
+  .mast {
+    padding: 26px 48px 0;
+    text-align: center;
+  }
+  .mast .name {
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    color: #f2ede4;
+  }
+  .mast .name em {
+    font-style: normal;
+    color: #f5a623;
+  }
+  .rule {
+    height: 2px;
+    background: #f5a623;
+    margin: 12px 48px 0;
+  }
+  .rule.thin {
+    height: 1px;
+    background: #5a6b84;
+    margin-top: 4px;
+  }
   /* Giant date */
-  .dateband { text-align: center; padding: 14px 0 4px; }
-  .dateband .date { font-family: Arial, Helvetica, sans-serif; font-size: 80px;
-    font-weight: 900; letter-spacing: 1px; line-height: 1; color: #f5a623; }
-  .dateband .sub { font-family: Arial, Helvetica, sans-serif; font-size: 19px;
-    letter-spacing: 7px; color: #b9c4d4; margin-top: 8px; text-transform: uppercase; }
+  .dateband {
+    text-align: center;
+    padding: 14px 0 4px;
+  }
+  .dateband .date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #f5a623;
+  }
+  .dateband .sub {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    letter-spacing: 7px;
+    color: #b9c4d4;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
   /* Hero visual */
-  .hero { position: relative; margin: 14px 48px 0; height: 470px; overflow: hidden;
-    border: 1px solid #33445e; }
-  .hero svg { display: block; width: 928px; height: 470px; }
-  .alert { position: absolute; top: 14px; left: 14px; background: #d7263d; color: #fff;
-    font-family: Arial, Helvetica, sans-serif; font-weight: 900; font-size: 22px;
-    letter-spacing: 3px; padding: 8px 16px; }
-  .alert small { display: block; font-size: 12px; letter-spacing: 2px; font-weight: 700; margin-top: 2px; }
-  .caption { position: absolute; right: 14px; bottom: 12px; font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px; letter-spacing: 1px; color: #dfe6ef; background: rgba(10,17,32,.72);
-    padding: 6px 10px; }
+  .hero {
+    position: relative;
+    margin: 14px 48px 0;
+    height: 470px;
+    overflow: hidden;
+    border: 1px solid #33445e;
+  }
+  .hero svg {
+    display: block;
+    width: 928px;
+    height: 470px;
+  }
+  /* red tag over the hero */
+  .alert {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: #d7263d;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 8px 16px;
+  }
+  .alert small {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .caption {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #dfe6ef;
+    background: rgba(10,17,32,.72);
+    padding: 6px 10px;
+  }
   /* Headline + deck */
-  .headline { padding: 18px 48px 0; text-align: center; }
-  .headline h1 { font-size: 58px; line-height: 1.02; font-weight: 900; letter-spacing: 1px; }
-  .headline h1 span { color: #f5a623; }
-  .deck { padding: 12px 64px 0; text-align: center; font-size: 23px; line-height: 1.35;
-    color: #d7dee8; font-family: Georgia, serif; }
-  .deck b { color: #fff; }
+  .headline {
+    padding: 18px 48px 0;
+    text-align: center;
+  }
+  .headline h1 {
+    font-size: 58px;
+    line-height: 1.02;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .headline h1 span {
+    color: #f5a623;
+  }
+  .deck {
+    padding: 12px 64px 0;
+    text-align: center;
+    font-size: 23px;
+    line-height: 1.35;
+    color: #d7dee8;
+    font-family: Georgia, serif;
+  }
+  .deck b {
+    color: #fff;
+  }
   /* Supporting strip */
-  .strip { margin: 20px 48px 0; border-top: 2px solid #f5a623; padding-top: 12px;
-    display: flex; gap: 24px; }
-  .item { flex: 1; }
-  .item .kick { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 900;
-    letter-spacing: 2px; color: #f5a623; margin-bottom: 5px; }
-  .item p { font-size: 17px; line-height: 1.32; color: #dde3ec; }
-  .item + .item { border-left: 1px solid #33445e; padding-left: 24px; }
+  .strip {
+    margin: 20px 48px 0;
+    border-top: 2px solid #f5a623;
+    padding-top: 12px;
+    display: flex;
+    gap: 24px;
+  }
+  .item {
+    flex: 1;
+  }
+  .item .kick {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #f5a623;
+    margin-bottom: 5px;
+  }
+  .item p {
+    font-size: 17px;
+    line-height: 1.32;
+    color: #dde3ec;
+  }
+  .item + .item {
+    border-left: 1px solid #33445e;
+    padding-left: 24px;
+  }
   /* Ticker */
-  .ticker { margin-top: auto; background: #05080f; border-top: 1px solid #33445e;
-    padding: 12px 48px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;
-    letter-spacing: .5px; color: #aeb9c9; text-align: center; }
-  .ticker b { color: #f5a623; }
+  .ticker {
+    margin-top: auto;
+    background: #05080f;
+    border-top: 1px solid #33445e;
+    padding: 12px 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: #aeb9c9;
+    text-align: center;
+  }
+  .ticker b {
+    color: #f5a623;
+  }
 </style>
 </head>
 <body>
 <div class="page">
-  <div class="mast"><div class="name">THE WORLD <em>ON WEDNESDAY</em></div></div>
-  <div class="rule"></div><div class="rule thin"></div>
+  <div class="mast">
+    <div class="name">THE WORLD <em>ON WEDNESDAY</em></div>
+  </div>
+  <div class="rule"></div>
+  <div class="rule thin"></div>
 
   <div class="dateband">
     <div class="date">25 NOVEMBER 2026</div>
@@ -75,74 +208,104 @@
   <div class="hero">
     <svg width="928" height="470" viewBox="0 0 928 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Riyadh PIF tower at dusk with a smoke scar from a drone strike">
       <defs>
-        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#0e1a33"/><stop offset=".55" stop-color="#274060"/>
-          <stop offset=".82" stop-color="#b45a28"/><stop offset="1" stop-color="#e8833a"/>
+        <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0e1a33"/>
+          <stop offset=".55" stop-color="#274060"/>
+          <stop offset=".82" stop-color="#b45a28"/>
+          <stop offset="1" stop-color="#e8833a"/>
         </linearGradient>
-        <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#1d3550"/><stop offset=".5" stop-color="#3d6a92"/>
+        <linearGradient id="towerFace" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#1d3550"/>
+          <stop offset=".5" stop-color="#3d6a92"/>
           <stop offset="1" stop-color="#16283e"/>
         </linearGradient>
-        <linearGradient id="glass2" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#24466a"/><stop offset="1" stop-color="#0f1e33"/>
+        <linearGradient id="towerSide" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#24466a"/>
+          <stop offset="1" stop-color="#0f1e33"/>
         </linearGradient>
-        <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+        <radialGradient id="emberGlow" cx=".5" cy=".5" r=".5">
           <stop offset="0" stop-color="#ff9a3d" stop-opacity=".9"/>
           <stop offset="1" stop-color="#ff9a3d" stop-opacity="0"/>
         </radialGradient>
       </defs>
-      <rect width="928" height="470" fill="url(#sky)"/>
+      <rect width="928" height="470" fill="url(#dusk)"/>
       <circle cx="760" cy="96" r="34" fill="#f7d9a0" opacity=".92"/>
       <circle cx="760" cy="96" r="52" fill="#f7d9a0" opacity=".22"/>
       <!-- distant skyline -->
       <g fill="#0d1a30">
-        <rect x="0" y="330" width="70" height="140"/><rect x="80" y="360" width="46" height="110"/>
-        <rect x="136" y="300" width="60" height="170"/><rect x="700" y="330" width="58" height="140"/>
-        <rect x="768" y="300" width="66" height="170"/><rect x="844" y="350" width="84" height="120"/>
+        <rect x="0" y="330" width="70" height="140"/>
+        <rect x="80" y="360" width="46" height="110"/>
+        <rect x="136" y="300" width="60" height="170"/>
+        <rect x="700" y="330" width="58" height="140"/>
+        <rect x="768" y="300" width="66" height="170"/>
+        <rect x="844" y="350" width="84" height="120"/>
       </g>
       <g fill="#ffd166" opacity=".85">
-        <rect x="20" y="350" width="5" height="5"/><rect x="40" y="380" width="5" height="5"/>
-        <rect x="150" y="330" width="5" height="5"/><rect x="170" y="370" width="5" height="5"/>
-        <rect x="720" y="350" width="5" height="5"/><rect x="790" y="330" width="5" height="5"/>
-        <rect x="860" y="380" width="5" height="5"/><rect x="100" y="400" width="5" height="5"/>
+        <rect x="20" y="350" width="5" height="5"/>
+        <rect x="40" y="380" width="5" height="5"/>
+        <rect x="150" y="330" width="5" height="5"/>
+        <rect x="170" y="370" width="5" height="5"/>
+        <rect x="720" y="350" width="5" height="5"/>
+        <rect x="790" y="330" width="5" height="5"/>
+        <rect x="860" y="380" width="5" height="5"/>
+        <rect x="100" y="400" width="5" height="5"/>
       </g>
       <!-- PIF tower: twisted glass slab, dominant -->
       <g>
-        <polygon points="392,470 392,60 536,60 536,470" fill="url(#glass)"/>
+        <polygon points="392,470 392,60 536,60 536,470" fill="url(#towerFace)"/>
         <polygon points="392,60 430,28 574,28 536,60" fill="#4d7ba3"/>
-        <polygon points="536,60 574,28 574,470 536,470" fill="url(#glass2)"/>
+        <polygon points="536,60 574,28 574,470 536,470" fill="url(#towerSide)"/>
         <!-- facet lines -->
         <g stroke="#7fb3d5" stroke-width="1.4" opacity=".55">
-          <line x1="420" y1="60" x2="420" y2="470"/><line x1="452" y1="60" x2="452" y2="470"/>
-          <line x1="484" y1="60" x2="484" y2="470"/><line x1="516" y1="60" x2="516" y2="470"/>
-          <line x1="392" y1="120" x2="536" y2="120"/><line x1="392" y1="180" x2="536" y2="180"/>
-          <line x1="392" y1="240" x2="536" y2="240"/><line x1="392" y1="300" x2="536" y2="300"/>
-          <line x1="392" y1="360" x2="536" y2="360"/><line x1="392" y1="420" x2="536" y2="420"/>
+          <line x1="420" y1="60" x2="420" y2="470"/>
+          <line x1="452" y1="60" x2="452" y2="470"/>
+          <line x1="484" y1="60" x2="484" y2="470"/>
+          <line x1="516" y1="60" x2="516" y2="470"/>
+          <line x1="392" y1="120" x2="536" y2="120"/>
+          <line x1="392" y1="180" x2="536" y2="180"/>
+          <line x1="392" y1="240" x2="536" y2="240"/>
+          <line x1="392" y1="300" x2="536" y2="300"/>
+          <line x1="392" y1="360" x2="536" y2="360"/>
+          <line x1="392" y1="420" x2="536" y2="420"/>
         </g>
         <!-- lit windows -->
         <g fill="#ffd166" opacity=".9">
-          <rect x="404" y="90" width="10" height="7"/><rect x="436" y="90" width="10" height="7"/>
-          <rect x="468" y="90" width="10" height="7"/><rect x="500" y="90" width="10" height="7"/>
-          <rect x="404" y="150" width="10" height="7"/><rect x="468" y="150" width="10" height="7"/>
-          <rect x="500" y="150" width="10" height="7"/><rect x="436" y="210" width="10" height="7"/>
-          <rect x="500" y="210" width="10" height="7"/><rect x="404" y="330" width="10" height="7"/>
-          <rect x="468" y="330" width="10" height="7"/><rect x="404" y="390" width="10" height="7"/>
-          <rect x="436" y="390" width="10" height="7"/><rect x="500" y="390" width="10" height="7"/>
-          <rect x="468" y="450" width="10" height="7"/><rect x="404" y="450" width="10" height="7"/>
+          <rect x="404" y="90" width="10" height="7"/>
+          <rect x="436" y="90" width="10" height="7"/>
+          <rect x="468" y="90" width="10" height="7"/>
+          <rect x="500" y="90" width="10" height="7"/>
+          <rect x="404" y="150" width="10" height="7"/>
+          <rect x="468" y="150" width="10" height="7"/>
+          <rect x="500" y="150" width="10" height="7"/>
+          <rect x="436" y="210" width="10" height="7"/>
+          <rect x="500" y="210" width="10" height="7"/>
+          <rect x="404" y="330" width="10" height="7"/>
+          <rect x="468" y="330" width="10" height="7"/>
+          <rect x="404" y="390" width="10" height="7"/>
+          <rect x="436" y="390" width="10" height="7"/>
+          <rect x="500" y="390" width="10" height="7"/>
+          <rect x="468" y="450" width="10" height="7"/>
+          <rect x="404" y="450" width="10" height="7"/>
         </g>
         <!-- smoke scar: impact band halfway up, embers still glowing -->
-        <ellipse cx="464" cy="272" rx="126" ry="48" fill="url(#glow)"/>
+        <ellipse cx="464" cy="272" rx="126" ry="48" fill="url(#emberGlow)"/>
         <g fill="#2a2a2e" opacity=".92">
-          <ellipse cx="440" cy="268" rx="52" ry="16"/><ellipse cx="486" cy="276" rx="44" ry="13"/>
+          <ellipse cx="440" cy="268" rx="52" ry="16"/>
+          <ellipse cx="486" cy="276" rx="44" ry="13"/>
           <ellipse cx="464" cy="258" rx="34" ry="10"/>
         </g>
-        <g fill="#ff7a1a"><rect x="428" y="262" width="7" height="7"/><rect x="452" y="272" width="6" height="6"/>
-          <rect x="486" y="264" width="7" height="7"/><rect x="498" y="276" width="5" height="5"/>
-          <rect x="470" y="258" width="5" height="5"/></g>
+        <g fill="#ff7a1a">
+          <rect x="428" y="262" width="7" height="7"/>
+          <rect x="452" y="272" width="6" height="6"/>
+          <rect x="486" y="264" width="7" height="7"/>
+          <rect x="498" y="276" width="5" height="5"/>
+          <rect x="470" y="258" width="5" height="5"/>
+        </g>
         <rect x="392" y="252" width="144" height="8" fill="#1a1a1e" opacity=".85"/>
         <!-- rising smoke -->
         <g fill="#8a8f98" opacity=".5">
-          <ellipse cx="452" cy="228" rx="26" ry="12"/><ellipse cx="470" cy="204" rx="34" ry="14"/>
+          <ellipse cx="452" cy="228" rx="26" ry="12"/>
+          <ellipse cx="470" cy="204" rx="34" ry="14"/>
           <ellipse cx="446" cy="176" rx="28" ry="11"/>
         </g>
       </g>
@@ -153,33 +316,50 @@
       <g fill="#0a1120" stroke="#f2ede4" stroke-width="1.8">
         <rect x="644" y="110" width="34" height="12" rx="3"/>
         <line x1="638" y1="110" x2="684" y2="110" stroke="#f2ede4"/>
-        <circle cx="636" cy="108" r="5" fill="none"/><circle cx="686" cy="108" r="5" fill="none"/>
+        <circle cx="636" cy="108" r="5" fill="none"/>
+        <circle cx="686" cy="108" r="5" fill="none"/>
       </g>
       <!-- ground -->
       <rect x="0" y="440" width="928" height="30" fill="#070d18"/>
-      <g fill="#ffd166" opacity=".7"><rect x="60" y="452" width="4" height="4"/><rect x="240" y="452" width="4" height="4"/>
-        <rect x="620" y="452" width="4" height="4"/><rect x="820" y="452" width="4" height="4"/></g>
+      <g fill="#ffd166" opacity=".7">
+        <rect x="60" y="452" width="4" height="4"/>
+        <rect x="240" y="452" width="4" height="4"/>
+        <rect x="620" y="452" width="4" height="4"/>
+        <rect x="820" y="452" width="4" height="4"/>
+      </g>
     </svg>
     <div class="alert">DRONE STRIKE<small>RIYADH &middot; SECOND HIT IN A WEEK</small></div>
     <div class="caption">The 385-metre PIF tower, King Abdullah Financial District</div>
   </div>
 
-  <div class="headline"><h1>RIYADH&rsquo;S TALLEST TOWER <span>HIT AGAIN</span></h1></div>
-  <div class="deck">A Houthi drone strikes the PIF tower in the financial district &mdash; the
-    second hit in under a week. <b>Eleven wounded;</b> Riyadh vows a decisive reply.</div>
-
-  <div class="strip">
-    <div class="item"><div class="kick">KYIV</div>
-      <p>Zelensky owns the Baltic ship strike: &ldquo;We did everything right.&rdquo; Norway urges caution.</p></div>
-    <div class="item"><div class="kick">BRUSSELS</div>
-      <p>EU caps Chinese hybrid imports at 350,000 a year from 1 December.</p></div>
-    <div class="item"><div class="kick">MINEMBWE</div>
-      <p>Congo hunts a missing army plane as rebels claim a shoot-down; two survivors held.</p></div>
+  <div class="headline">
+    <h1>RIYADH&rsquo;S TALLEST TOWER <span>HIT AGAIN</span></h1>
+  </div>
+  <div class="deck">
+    A Houthi drone strikes the PIF tower in the financial district &mdash; the
+    second hit in under a week. <b>Eleven wounded;</b> Riyadh vows a decisive reply.
   </div>
 
-  <div class="ticker"><b>ALSO:</b> COP31 ends with no pact &mdash; first no-deal summit since 2009
+  <div class="strip">
+    <div class="item">
+      <div class="kick">KYIV</div>
+      <p>Zelensky owns the Baltic ship strike: &ldquo;We did everything right.&rdquo; Norway urges caution.</p>
+    </div>
+    <div class="item">
+      <div class="kick">BRUSSELS</div>
+      <p>EU caps Chinese hybrid imports at 350,000 a year from 1 December.</p>
+    </div>
+    <div class="item">
+      <div class="kick">MINEMBWE</div>
+      <p>Congo hunts a missing army plane as rebels claim a shoot-down; two survivors held.</p>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <b>ALSO:</b> COP31 ends with no pact &mdash; first no-deal summit since 2009
     &middot; NATO sends AWACS to Poland &middot; Sweden sets PM vote for 30 Nov
-    &middot; Huawei convicted in US trial</div>
+    &middot; Huawei convicted in US trial
+  </div>
 </div>
 </body>
 </html>
